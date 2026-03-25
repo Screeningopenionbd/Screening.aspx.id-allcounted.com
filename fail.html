@@ -1,16 +1,16 @@
 <script>
-  // Example duplicate check function
-  function isDuplicateUser() {
-    // Replace with your actual logic (cookies, server check, etc.)
-    return localStorage.getItem("alreadyVisited") === "true";
+  // Example screener function
+  function runScreener() {
+    // Add your screening logic here
+    // For example: check cookies, IP, or server validation
+    return true; // If they fail the screener, return true
   }
 
   // Redirect logic
-  if (isDuplicateUser()) {
-    window.location.href = "https://screeningopenionbd.github.io/Screening.aspx.id-allcounted.com/fail";
+  if (runScreener()) {
+    window.location.href = "https://panelopenionbd.github.io/Surveys/fail.html";
   } else {
-    // Mark user as visited
-    localStorage.setItem("alreadyVisited", "true");
-    window.location.href = "https://screeningopenionbd.github.io/Screening.aspx.id-allcounted.com/fail";
+    // If they pass, send them to your survey or another page
+    window.location.href = "https://panelopenionbd.github.io/Surveys/start.html";
   }
 </script>
