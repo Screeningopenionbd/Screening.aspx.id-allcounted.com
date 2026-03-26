@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Finding An Ideal Survey</title>
+  <title></title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -39,13 +39,25 @@
 </head>
 <body>
   <div class="loader"></div>
-  <h1>Finding An Ideal Survey For You</h1>
-  <p>You will be redirected shortly...</p>
+  <h1></h1>
+  <p></p>
 
   <script>
-    // Wait 20 seconds, then redirect
+    // List of surveys
+    const surveys = [
+      "https://www.allcounted.com/s?did=goom761fyu549&lang=en_US",
+      "https://www.allcounted.com/s?did=s14bpolfyhmuz&page=2",
+      "https://www.allcounted.com/s?did=kxn5hpi044bxn&lang=en_US",
+      "https://www.allcounted.com/s?did=cflmvolf4058d&lang=en_US",
+      "https://www.insightexpress.com/ix/Q/384683?p=129&preview=true&livePreview=True&startingPosition=0&accessCode=2295695960",
+      "https://www.allcounted.com/s?did=cflb4olfvfm8d&lang=en_US",
+      "https://www.allcounted.com/s?did=3oa5x96p4nboa&lang=en_US"
+    ];
+
+    // Wait 20 seconds, then redirect to a random survey
     setTimeout(function() {
-      window.location.href = "https://screeningopenionbd.github.io/Sample-Surveys-estart-our-Survey01/";
+      const randomIndex = Math.floor(Math.random() * surveys.length);
+      window.location.href = surveys[randomIndex];
     }, 20000);
   </script>
 </body>
